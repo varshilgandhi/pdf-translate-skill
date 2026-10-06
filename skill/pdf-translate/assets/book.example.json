@@ -1,0 +1,38 @@
+{
+  "_doc": {
+    "mode": "translate (faithful full translation, client-facing styling) or study-guide",
+    "lang": "code from references/languages.md (gu, hi, ur, ta, zh, ar ...); 'latin' for any Latin-script language",
+    "output": "final PDF path, relative to this file - this is the file to deliver",
+    "running_header": "small text at the top of every page except the cover",
+    "cover": "code line, title, subtitles, note (what this is, how terms are handled, what to verify)",
+    "units[].id": "matches frag_<id>.html and <id>.txt in work_dir",
+    "units[].label / title / source_title": "contents-page text: label · target title (source title)",
+    "units[].part_heading": "optional group heading printed in the contents before this unit",
+    "units[].match": "exact text of the unit's chcover .code line - used to find its start page",
+    "units[].match_extra": "extra text that must be on the same page (tells parts of a split chapter apart)",
+    "unit_page_break": "true (default) starts each unit on a new page; false for short documents",
+    "optional": "font, dir, line_height, heading_line_height override references/languages.md; extra_css is appended"
+  },
+  "work_dir": ".",
+  "mode": "translate",
+  "lang": "hi",
+  "title": "शाह फैमिली एडवाइज़री - क्लाइंट हैंडबुक",
+  "output": "final.pdf",
+  "running_header": "Shah Family Advisory · क्लाइंट हैंडबुक",
+  "unit_page_break": false,
+  "cover": {
+    "code": "CLIENT HANDBOOK",
+    "title": "क्लाइंट हैंडबुक",
+    "subtitles": ["शाह फैमिली एडवाइज़री", "Copyright 2026 Shah Family Advisory"],
+    "note": "यह अंग्रेज़ी हैंडबुक का पूरा हिंदी अनुवाद है। ..."
+  },
+  "toc_title": "विषय-सूची",
+  "after_toc_html": "",
+  "footer_note": "",
+  "units": [
+    {"id": "ch1", "label": "अध्याय 1", "title": "हेल्थ इंश्योरेंस की बुनियादी बातें", "source_title": "Health Insurance Basics",
+     "match": "CLIENT HANDBOOK · CHAPTER 1"},
+    {"id": "ch2", "label": "अध्याय 2", "title": "क्लेम कैसे करें", "source_title": "How to Make a Claim",
+     "match": "CLIENT HANDBOOK · CHAPTER 2"}
+  ]
+}
